@@ -14,7 +14,7 @@ INCOME
 │   ├── templates/
 │   │   └── index.html       # HTML template for the web application
 │   ├── app.py               # Flask application to serve predictions
-│   ├── model.pkl            # Serialized best machine learning model
+│   ├── ├── model.pkl        # Generated after training (not committed to repo)
 │   └── model.py             # Script to train and save the best model as a pickle file
 │
 ├── assets/
@@ -55,14 +55,14 @@ INCOME
 
 ### Getting Started
 #### Prerequisites
-* Python 3.8 or later
+* Python 3.10 or 3.11 recommended
 * Docker installed on your machine
 * (Optional) Virtual environment tools like venv or conda           
 
 #### Installation
 1. Clone the repository:
 ```
-git clone https://github.com/your-repo/Income_Prediction_Using_Machine_Learning.git
+git clone https://github.com/crystaljain27/Income-Predictor.git
 cd Income_Prediction_Using_Machine_Learning
 ```
 2. Set up a virtual environment (optional but recommended):
@@ -94,7 +94,7 @@ docker build -t flask-income-app .
 ```
 2. Run the Docker Container:
 ```
-docker run -p 5000:5000 adult-income-prediction
+docker run -p 5000:5000 flask-income-app
 ```
 3. Access the App:
 * Open your browser and navigate to `http://127.0.0.1:5000`.
